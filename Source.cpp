@@ -32,7 +32,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
 		GetPixelShaderVersion(hStatic);
 		break;
 	case WM_SIZE:
-		MoveWindow(hStatic, 10, 10, LOWORD(lParam) - 10, 32, TRUE);
+		MoveWindow(hStatic, 10, 10, LOWORD(lParam) - 20, 32, TRUE);
 		break;
 	case WM_DESTROY:
 		PostQuitMessage(0);
